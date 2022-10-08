@@ -12,10 +12,12 @@ public class TriangleType {
 
 		Scanner input = new Scanner(System.in);
 		int a, b, c;
-		System.out.println("enter the three sides of Triangle");
+		System.out.println("enter the sides");
 
 		a = input.nextInt();
+		
 		b = input.nextInt();
+		
 		c = input.nextInt();
 
 		System.out.println(getTriangleType(a, b, c));
@@ -24,7 +26,7 @@ public class TriangleType {
 	public static String getTriangleType(int a, int b, int c) {
 
 		if (a + b > c && b + c > a && c + a > b) {
-			System.out.println("Triangle possible");
+			System.out.println("Is a Triangle");
 			if (a == b && b == c)
 				return "equilateral";
 			else if (a == b || b == c || c == a)
